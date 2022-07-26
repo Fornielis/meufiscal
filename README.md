@@ -5,8 +5,8 @@
 <h1 align="center">
     https://meufiscal.online
 </h1>
-<h4 align="center">Usuário: Gesotor</h4>
-<h4 align="center">Senha: Gesotor@2022</h4>
+<h4 align="center">Usuário: Gestor</h4>
+<h4 align="center">Senha: Gestor@2022</h4>
 
 </br><b>CRUD Meu Fiscal</b>
 </p>
