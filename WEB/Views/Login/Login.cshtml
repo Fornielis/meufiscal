@@ -1,0 +1,45 @@
+﻿@model UsuarioViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>meufiscal</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/WEB.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/animate.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href="~/img/ICONE.svg" rel="shortcut icon" type="image/x-icon">
+</head>
+<body style="position: relative">
+
+    <section id="particles-js" class="login-background">
+        <div id="login-box" class="animated zoomInDown">
+            <div>
+                <img src="~/img/LOGO.svg" />
+                <p class="text-danger mb-1 mt-0">@Model.LoginOK</p>
+                <form id="form-login" asp-controller="Login" asp-action="Login" role="form" method="post">
+                    <input class="@Model.LoginOK" type="text" placeholder="Usuário" asp-for="Usuario" />
+                    <input class="@Model.LoginOK" type="password" placeholder="Senha" asp-for="Senha" />
+                    <input class="btn" type="submit" value="ENTRAR" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/particles/particles.js"></script>
+    <script src="~/js/particles/app.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</body>
+</html>

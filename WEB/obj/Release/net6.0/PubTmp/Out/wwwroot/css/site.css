@@ -1,0 +1,172 @@
+/* FONT GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Outfit&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* BODY */
+body {
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, rgba(227,227,227,1) 0%,rgba(208,208,208,1) 100%);
+    font-family: 'Outfit', sans-serif;
+}
+
+/* LAYOUT PADRÃO */
+.icone-web {
+    height: 25px;
+    margin-right: 20px;
+    margin-top: -5px;
+}
+
+#icone-fundo {
+    width: 100%;
+    height: calc(100vh - 90px);
+    text-align: center;
+    padding-top: 170px;
+    text-align: center
+}
+
+    #icone-fundo img {
+        height: 250px;
+    }
+
+/* FORMULARIOS */
+input,
+textarea {
+    text-transform: uppercase
+}
+
+/* TABELAS */
+.risco{
+    color: red;
+}
+table tbody tr {
+    cursor: pointer;
+    transition: .1s all linear;
+}
+
+table thead {
+    background: linear-gradient(to bottom, #59236B 0%,#0a0605 100%);
+    color: #ffffff;
+}
+
+table tbody tr {
+    background: linear-gradient(to bottom, #c7c7c7 0%,#CCCCCC 100%);
+    color: #000000;
+}
+
+    table tbody tr:hover {
+        background: linear-gradient(to bottom, #59236B 0%,#59236B 100%);
+    }
+
+        table tbody tr:hover td {
+            color: #ffffff;
+        }
+
+        table tbody tr:hover .risco {
+            background-color: red;
+            color: #ffffff;
+        }
+
+.FSC {
+    color: #198754;
+}
+
+/* LOGIN */
+.login-background {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(to bottom, #59236B 0%,#0a0605 100%);
+}
+
+#login-box {
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    top: 50%;
+    margin-top: -175px;
+    left: 50%;
+    margin-left: -150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #login-box::before {
+        content: "";
+        background-image: conic-gradient( #95c125 20deg, transparent 120deg );
+        width: 150%;
+        height: 150%;
+        position: absolute;
+        animation: rotate-login 2s linear infinite;
+    }
+
+    #login-box > div {
+        width: 290px;
+        height: 340px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(191,191,191,1) 100%);
+        z-index: 9999;
+    }
+
+        #login-box > div > img {
+            width: 245px;
+            margin: 30px 20px 30px 20px;
+        }
+
+#form-login > input {
+    width: 240px;
+    height: 50px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    font-size: 15px;
+    border: solid 1px #59236B;
+    color: rgb(112,111,111);
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+input:focus {
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+#form-login > .btn {
+    width: 250px;
+    height: 50px;
+    padding: 0px;
+    color: #ffffff;
+    font-size: 18px;
+    background-color: #672F8E;
+    cursor: pointer;
+    border: none;
+    transition: all linear .4s;
+}
+
+    #form-login > .btn:hover {
+        background-color: #59236B;
+    }
+
+.Login-Erro {
+    border: none;
+}
+
+/* MENU */
+#nav-menu {
+    background: linear-gradient(to bottom, #59236B 0%,#0a0605 100%);
+}
